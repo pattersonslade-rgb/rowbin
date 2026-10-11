@@ -2,7 +2,7 @@
  *
  * GUMROAD_PRODUCT_ID: your Gumroad product's ID. Find it on the product's edit page
  *   (Content/Settings → "License key" section shows the product_id once you tick
- *   "Generate a unique license key per sale"). Required for Pro unlocks to work.
+ *   the option that gives each sale its own license key). Required for Pro unlocks to work.
  * CHECKOUT_URL: your Gumroad product link, e.g. "https://yourname.gumroad.com/l/rowbin".
  *   Set the product to "Pay what you want" with a minimum of $4.99 on Gumroad.
  * License keys are verified ONCE online with Gumroad when a buyer enters them; after

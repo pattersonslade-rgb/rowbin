@@ -1,0 +1,5 @@
+# Note: crawlers only read robots.txt at the domain root (pattersonslade-rgb.github.io/robots.txt).
+# This copy documents intent; with no root robots.txt, everything is allowed by default.
+User-agent: *
+Allow: /
+Sitemap: https://pattersonslade-rgb.github.io/rowbin/sitemap.xml
