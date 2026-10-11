@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Rowbin · Cozy Row Counter for Knitting & Crochet</title>
+  <meta name="description" content="Rowbin is an ad-free knitting & crochet row counter. No account, no subscription, works offline, and your data stays on your phone.">
+  <meta name="theme-color" content="#B5523B">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Rowbin">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app" aria-live="off"></div>
+  <div id="sheet-root"></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <!-- iOS haptic helper (Safari 18+ fires a light tap when a switch toggles) -->
+  <label id="hx-label" for="hx" aria-hidden="true" style="position:absolute;left:-9999px;top:0;width:1px;height:1px;overflow:hidden"><input type="checkbox" id="hx" switch tabindex="-1"></label>
+  <noscript><p style="padding:24px;font-family:sans-serif">Rowbin needs JavaScript turned on.</p></noscript>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
