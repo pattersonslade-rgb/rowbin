@@ -204,6 +204,7 @@
     if (pu.chargebacked || (pu.disputed && !pu.dispute_won)) return { state: 'revoked', msg: 'This purchase was disputed or charged back, so the key no longer unlocks Pro.' + supportLine() };
     if (pu.subscription_ended_at || pu.subscription_cancelled_at || pu.subscription_failed_at) return { state: 'revoked', msg: 'This purchase is no longer active.' + supportLine() };
     if (C.GUMROAD_PRODUCT_ID && pu.product_id && pu.product_id !== C.GUMROAD_PRODUCT_ID) return { state: 'invalid', msg: 'That key belongs to a different product.' };
+    // Note: purchase.test (the seller's own test purchase) is intentionally accepted.
     return { state: 'valid', uses: typeof j.uses === 'number' ? j.uses : null, sale: pu.sale_id || pu.id || null, test: !!pu.test };
   }
   function devUnlock(n) {

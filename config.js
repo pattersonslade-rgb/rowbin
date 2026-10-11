@@ -15,8 +15,8 @@ window.ROWBIN_CONFIG = {
   APP_NAME: "Rowbin",
   PRO_PRICE: "$4.99+",                       // shown in the app
   PRO_PRICE_NOTE: "Pay what you want, from $4.99", // shown under the price
-  CHECKOUT_URL: "",                           // e.g. "https://yourname.gumroad.com/l/rowbin"
-  GUMROAD_PRODUCT_ID: "",                     // e.g. "AbCdEf123456_-=="
+  CHECKOUT_URL: "https://sladepatterson.gumroad.com/l/lxxun",
+  GUMROAD_PRODUCT_ID: "UR9HK6ZOZUBfxT0VJK1qaA==",
   LICENSE_VERIFY_URL: "https://api.gumroad.com/v2/licenses/verify", // Gumroad allows browser (CORS) calls
   MAX_ACTIVATIONS: 5,
   RECHECK_DAYS: 30,                           // 0 = never re-check after activation
